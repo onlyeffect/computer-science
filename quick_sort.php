@@ -5,8 +5,7 @@ function quickSort(array $arr)
 	if(sizeof($arr) < 2){
 		return $arr;
 	} else {
-		$less = [];
-		$great = [];
+		$less = $great = [];
 		$pivot = $arr[0];
 		for($i = 1; $i < sizeof($arr); $i++){
 			if($arr[$i] <= $pivot){

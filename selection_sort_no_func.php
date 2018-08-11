@@ -2,10 +2,11 @@
 
 function selectionSort(array $arr)
 {
-  for ($i = 0; $i < count($arr); $i++) {
+  $arraySize = count($arr);
+  for ($i = 0; $i < $arraySize; $i++) {
     $min = $arr[$i];
     $minKey = $i;
-    for($j = $i; $j < count($arr); $j++) {
+    for($j = $i + 1; $j < $arraySize; $j++) {
       if ($arr[$j] < $min) {
         $min = $arr[$j];
         $minKey = $j;

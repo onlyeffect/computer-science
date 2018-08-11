@@ -2,10 +2,8 @@
 
 function findMinIndex($arr)
 {
-	global $iter;
 	$minIndex = 0;
 	for($i = 1; $i < sizeof($arr); $i++){
-		$iter++;
 		if($arr[$i] < $arr[$minIndex]){
 			$minIndex = $i;
 		}
